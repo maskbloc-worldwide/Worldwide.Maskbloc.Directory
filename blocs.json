@@ -39,6 +39,21 @@
       "lat": 30.2672,
       "lng": -97.7431
     },
+     {
+      "name": "Mask Bloc DFW",
+      "region": "USA – South",
+      "location": "Dallas - Fort Worth, TX (Texas)",
+      "description": "A mutual aid group providing free masks, pol. ed. and DJ advocacy.",
+      "status": "active",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocdfw/" },
+        { "label": "Mask Bloc DFW Linktree", "url": "https://linktr.ee/maskblocdfw" },
+        { "label": "Mask Request Form (Individuals/Families)", "url": "https://docs.google.com/forms/d/e/1FAIpQLSfurnal3AR_x3J6r4vAyrBN-y_OkhIfbSUmeCYdNpZSI83svg/viewform" },
+        { "label": "Formulario de Solicitud de Mascarillas para Individuos", "url": "https://docs.google.com/forms/d/14WS5ruppaq8Q4blrLeuZ7-vqumMZI2JZNEZ0kZbBfPU/viewform" }
+      ],
+      "lat": 32.8972,
+      "lng": -97.0377
+    },
     {
       "name": "South Eastern Pennsylvania Air Safety Bloc",
       "region": "USA – Northeast",
