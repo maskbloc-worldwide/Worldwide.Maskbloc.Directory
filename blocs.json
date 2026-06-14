@@ -15,29 +15,15 @@
       "name": "Mask Bloc HTX",
       "region": "USA – South",
       "location": "Houston, TX (Texas)",
-      "description": "A mutual aid group providing free masks, pol. ed. and DJ advocacy.",
-      "status": "active",
-      "links": [
-        { "label": "Instagram", "url": "https://www.instagram.com/maskblocdfw/" },
-        { "label": "Linktree", "url": "http://linktr.ee/maskblocdfw" },
-        { "label": "Our Spanish Request Form", "url": "https://tinyurl.com/44e776ef" }
-      ],
-      "lat": 29.7604,
-      "lng": -95.3698
-    },
-    {
-      "name": "Mask Bloc DFW",
-      "region": "USA – South",
-      "location": "Dallas, TX (Texas)",
       "description": "Free Masks, Free Covid Tests, Free Zines, and more!",
       "status": "active",
       "links": [
         { "label": "Instagram", "url": "https://instagram.com/maskbloc.htx" },
-        { "label": "Mask Request Form (Individuals/Families)", "url": "https://docs.google.com/forms/d/e/1FAIpQLSfurnal3AR_x3J6r4vAyrBN-y_OkhIfbSUmeCYdNpZSI83svg/viewform" },
-        { "label": "Formulario de Solicitud de Mascarillas para Individuos", "url": "https://docs.google.com/forms/d/14WS5ruppaq8Q4blrLeuZ7-vqumMZI2JZNEZ0kZbBfPU/viewform" }
+        { "label": "Our English Request Form", "url": "https://tinyurl.com/5n7mwt4b" },
+        { "label": "Our Spanish Request Form", "url": "https://tinyurl.com/44e776ef" }
       ],
-      "lat": 32.8972,
-      "lng": -97.0377
+      "lat": 29.7604,
+      "lng": -95.3698
     },
     {
       "name": "Mask Bloc ATX",
