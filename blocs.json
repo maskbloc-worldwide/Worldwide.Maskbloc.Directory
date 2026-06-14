@@ -67,5 +67,18 @@
       "lat": 39.9526,
       "lng": -75.1652
     }
+    {
+      "name": "Covid Conscious Bloc of San Antonio",
+      "region": "USA – Sout",
+      "location": "San Antonion, TX (Texas)",
+      "description": "Building community, sharing resources, advocating for masking, clean air, & accessibility for all. 😷🤝😷.",
+      "status": "active",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/ccb.sa/" },
+        { "label": "Website", "url": "https://ccb-sa.org" }
+      ],
+      "lat": 39.9526,
+      "lng": -75.1652
+    }
   ]
 }
