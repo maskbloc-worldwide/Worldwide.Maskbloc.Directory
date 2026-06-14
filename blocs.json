@@ -79,6 +79,19 @@
       ],
       "lat": 29.42412,
       "lng": -98.49363
+    },
+    {
+      "name": "Central Montco Mask Bloc",
+      "region": "USA – Northeast",
+      "location": "Montco, PA (Pennsylvania)",
+      "description": "Friendly neighborhood mask bloc supporting central area of Montco, PA.",
+      "status": "active",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/centralmontcomaskbloc/" },
+        { "label": "Linktree", "url": "http://linktr.ee/centralmontcomaskbloc" }
+      ],
+      "lat": 40.1215,
+      "lng": -75.3399
     }
   ]
 }
