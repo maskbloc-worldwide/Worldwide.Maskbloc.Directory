@@ -162,6 +162,20 @@
       ],
       "lat": -37.8174504,
       "lng": 144.9675024
+    },
+    {
+      "name": "Safer Shared Air Collective",
+      "region": "USA - Midwest",
+      "location": "Ann Arbor, MI (Michigan)",
+      "description": "A mutual aid group with efforts focused in Southeast Michigan, with an air purifier (& more!) lending library, local events and clean air advocacy.",
+      "status": "active",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/safer.shared.air/" },
+        { "label": "Linkstack", "url": "http://us.linkstack.org/@safersharedair/" },
+        { "label": "Lending Library", "url": "http://ssac.myturn.com/" }
+      ],
+      "lat": 42.24019,
+      "lng": 83.61482
     }
   ]
 }
