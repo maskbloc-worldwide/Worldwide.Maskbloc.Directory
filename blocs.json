@@ -160,8 +160,8 @@
         { "label": "Linktree", "url": "https://linktr.ee/covidnaarm/" },
         { "label": "Request & Volunteer Form", "url": "https://docs.google.com/forms/d/1ObIvJrN8sabXfybGPjNKa8X9swvxHrDA4KUop7GR0QY/viewform" }
       ],
-      "lat": 144.9675024,
-      "lng": -37.8174504
+      "lat": -37.8174504,
+      "lng": 144.9675024
     }
   ]
 }
