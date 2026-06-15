@@ -363,6 +363,20 @@
       ],
       "lat": 40.4307,
       "lng": -79.9317
+    },
+    {
+      "name": "Breathe Better Berlin",
+      "region": "Europe",
+      "location": "Berline, DE (Germany)",
+      "description": "Free N95 and bifold FFP2 masks, rapid and pluslife tests, Aranet air monitor rental.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/breathe.better.berlin" },
+        { "label": "Request Form", "url": "https://form.jotform.com/251623521144043" }
+      ],
+      "lat": 52.520008,
+      "lng": 13.404954
     }
   ]
 }
