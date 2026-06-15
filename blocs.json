@@ -14,7 +14,7 @@
   "blocs": [
     {
       "name": "Mask Bloc HTX",
-      "region": "USA – South",
+      "region": "USA - South",
       "location": "Houston, TX (Texas)",
       "description": "Mutual aid cooperative in so-called Houston.",
       "status": "active",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Mask Bloc ATX",
-      "region": "USA – South",
+      "region": "USA - South",
       "location": "Austin, TX (Texas)",
       "description": "COVID prevention activist & mutual aid group that gives out masks for free in communities.",
       "status": "active",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Mask Bloc DFW",
-      "region": "USA – South",
+      "region": "USA - South",
       "location": "Dallas - Fort Worth, TX (Texas)",
       "description": "A mutual aid group providing free masks, pol. ed. and DJ advocacy.",
       "status": "active",
@@ -60,7 +60,7 @@
     },
     {
       "name": "South Eastern Pennsylvania Air Safety Bloc",
-      "region": "USA – Northeast",
+      "region": "USA - Northeast",
       "location": "Philly, PA (Pennsylvania)",
       "description": "Now avail for distro in the Greater Philly Area: masks, covid tests, airborne safety ed, + public health & harm redux goods 😷 More comrades always welcome 💙 We are on crip time🦋.",
       "status": "active",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Covid Conscious Bloc of San Antonio",
-      "region": "USA – South",
+      "region": "USA - South",
       "location": "San Antonion, TX (Texas)",
       "description": "Building community, sharing resources, advocating for masking, clean air, & accessibility for all. 😷🤝😷.",
       "status": "active",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Central Montco Mask Bloc",
-      "region": "USA – Northeast",
+      "region": "USA - Northeast",
       "location": "Montco, PA (Pennsylvania)",
       "description": "Friendly neighborhood mask bloc supporting central area of Montco, PA.",
       "status": "active",
@@ -104,7 +104,7 @@
     },
     {
       "name": "Clean Air Reading",
-      "region": "USA – Northeast",
+      "region": "USA - Northeast",
       "location": "Reading, PA (Pennsylvania)",
       "description": "100% volunteer-run and funded mutual aid to fight disease in Reading, PA. Luchando contra COVID-19 en Reading, PA. 100% financiado por voluntarios.",
       "status": "active",
@@ -120,7 +120,7 @@
     },
     {
       "name": "Mask Bloc 413",
-      "region": "USA – Northeast",
+      "region": "USA - Northeast",
       "location": "Easthampton, MA (Massachusetts)",
       "description": "Mask Bloc for direct actions in the Western Mass.",
       "status": "active",
@@ -133,7 +133,7 @@
     },
     {
       "name": "Mask Bloc St. Louis",
-      "region": "USA – Midwest",
+      "region": "USA - Midwest",
       "location": "St. Louis, MO (Missouri)",
       "description": "Mask Bloc serving the STL metro area and beyond in MO. Check out our linktree to donate or request supplies!",
       "status": "active",
@@ -148,7 +148,7 @@
     },
     {
       "name": "Mask Bloc LA",
-      "region": "USA – West",
+      "region": "USA - West",
       "location": "Los Angeles, CA (California)",
       "description": "Mutual aid project to distribute free masks in the so-called Los Angeles area.",
       "status": "active",
