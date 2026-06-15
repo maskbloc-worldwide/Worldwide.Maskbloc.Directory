@@ -308,10 +308,10 @@
     {
       "name": "Still COVIDing Canada",
       "region": "Canada",
-      "location": "San Francisco, CA (California)",
+      "location": "Ottawa, ON (Ontario)",
       "description": "Bilingual website with action alerts, resource pages, information about masks, and over 3,300 news clippings about COVID-19 and other health issues.",
       "status": "active",
-      "type": "care-collective",
+      "type": "advocacy",
       "links": [
         { "label": "Website", "url": "https://stillcoviding.ca/" },
         { "label": "Instagram", "url": "https://www.instagram.com/stillcovidingcanada" },
