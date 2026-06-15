@@ -125,6 +125,557 @@
   .card .loc{font-family:"Spline Sans Mono",monospace;font-size:11.5px;letter-spacing:.05em;color:var(--mint-deep);text-transform:uppercase}
   .card h4{font-family:"Fraunces",serif;font-weight:600;font-size:20px;line-height:1.15;margin:0}
   .card p{font-size:14.5px;color:var(--ink-soft);margin:0;flex:1}
+  .badges{display:flex;flex-wrap:wrap;gap:6px}
+  .badge{align-self:flex-start;font-family:"Spline Sans Mono",monospace;font-size:11px;letter-spacing:.04em;padding:3px 9px;border-radius:30px;text-transform:uppercase;font-weight:500}
+  .badge.status-active{background:rgba(21,155,134,.13);color:var(--mint-deep)}
+  .badge.status-forming{background:rgba(224,162,59,.16);color:#9a6c12}
+  .badge.status-inactive{background:rgba(184,92,74,.14);color:var(--rust)}
+  .badge.type-mask-bloc{background:rgba(16,48,46,.08);color:var(--ink-soft)}
+  .badge.type-clean-air,.badge.type-care-collective,.badge.type-advocacy,.badge.type-student-led,.badge.type-charity{background:rgba(138,127,196,.16);color:#5d51a0}
+  .card .links{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+  .card .links a{font-size:13px;padding:5px 11px;border:1px solid var(--line);border-radius:8px;color:var(--ink-soft)}
+  .card .links a:hover{border-color:var(--mint-deep);color:var(--mint-deep);text-decoration:none;background:rgba(21,155,134,.05)}
+  .empty{padding:50px 20px;text-align:center;color:var(--ink-soft);border:1px dashed var(--line);border-radius:var(--r)}
+  .empty b{color:var(--ink);font-family:"Fraunces",serif}
+
+  /* ---- Submit section ---- */
+  .submit-sec{position:relative;overflow:hidden}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:var(--shadow);max-width:720px}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:14px;font-weight:500;margin-bottom:7px}
+  .field label .req{color:var(--rust)}
+  .field .hint{font-size:12.5px;color:var(--ink-soft);font-weight:400;margin-left:4px}
+  .field input,.field textarea,.field select{width:100%;font:inherit;font-size:15.5px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--mint);outline-offset:1px;border-color:transparent;background:#fff}
+  .field textarea{resize:vertical;min-height:90px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .form-note{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .form-status{margin-top:16px;padding:13px 15px;border-radius:10px;font-size:14.5px;display:none}
+  .form-status.ok{display:block;background:rgba(21,155,134,.12);color:var(--mint-deep)}
+  .form-status.err{display:block;background:rgba(184,92,74,.13);color:var(--rust)}
+
+  /* ---- Links / footer ---- */
+  .links-sec .grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  footer.site{color:var(--paper);padding:54px 0 60px;margin-top:20px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start}
+  footer .tag{font-family:"Fraunces",serif;font-size:22px;max-width:24ch}
+  footer .tag em{color:var(--mint);font-style:italic}
+  footer .social{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  footer .social a{color:var(--paper);font-size:13.5px;padding:8px 13px;border:1px solid rgba(243,241,233,.28);border-radius:9px}
+  footer .social a:hover{background:rgba(243,241,233,.08);text-decoration:none}
+  footer .social a.icon{display:inline-flex;align-items:center;justify-content:center;padding:9px;width:38px;height:38px;border-radius:50%}
+  footer .social a.icon svg{width:19px;height:19px}
+  footer .social .sep{width:1px;height:22px;background:rgba(243,241,233,.22);margin:0 4px}
+  footer small{color:rgba(243,241,233,.55);font-size:12.5px;display:block;margin-top:26px;width:100%}
+
+  @media (max-width:720px){
+    .two{grid-template-columns:1fr}
+    nav.top{display:none}
+    nav.top.open{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);padding:10px 16px;gap:2px}
+    nav.top.open a{padding:12px}
+    .menu-btn{display:inline-flex;margin-left:auto;background:none;border:1px solid var(--line);border-radius:9px;padding:8px 10px;cursor:pointer}
+    #map-canvas{height:420px}
+    section{padding:48px 0}
+    .panel{padding:24px}
+  }
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  :focus-visible{outline:2px solid var(--mint-deep);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Mask Bloc Directory — home">
+      <svg class="logo-mask" width="40" height="28" viewBox="0 0 200 140" fill="none" aria-hidden="true">
+        <path fill="currentColor" fill-rule="evenodd" d="M103.4,115.4 L96.6,115.4 L89.3,114.1 L72.5,108.5 L52.2,98.2 L44.0,92.7 L40.2,89.1 L38.5,84.9 L37.0,78.6 L35.8,65.8 L36.0,58.7 L36.8,53.7 L38.1,50.7 L39.4,49.4 L100.2,38.0 L158.3,48.7 L160.2,49.1 L161.7,50.3 L163.2,53.4 L164.0,57.8 L164.2,68.1 L162.6,81.1 L160.9,87.0 L159.4,89.7 L156.6,92.3 L149.3,97.4 L132.3,106.4 L117.4,112.2 L109.9,114.3 L103.4,115.4 Z M149.9,44.5 L100.6,35.3 L50.0,44.2 L54.3,39.5 L61.6,34.7 L70.9,30.3 L85.7,25.0 L96.2,18.8 L99.0,17.9 L101.3,17.9 L105.2,19.4 L115.3,25.5 L124.9,28.6 L138.4,34.7 L145.7,39.5 L149.1,43.0 L149.9,44.5 Z M36.5,87.7 L28.1,84.6 L19.5,80.0 L13.6,75.6 L8.3,69.2 L6.2,63.7 L6.2,57.2 L7.9,52.8 L12.2,48.9 L15.7,47.7 L21.6,47.3 L29.8,48.5 L35.1,50.3 L34.0,53.5 L23.1,51.0 L17.8,51.0 L14.5,51.9 L11.0,54.7 L10.0,57.0 L9.6,61.4 L11.2,67.1 L15.7,72.6 L23.7,78.3 L35.2,83.5 L36.5,87.7 Z M163.9,87.7 L163.6,87.2 L164.8,83.5 L175.2,78.9 L183.8,73.0 L188.3,67.9 L190.4,62.2 L190.2,57.6 L189.2,54.9 L187.4,52.9 L185.1,51.7 L182.4,51.0 L176.9,51.0 L166.0,53.5 L164.9,50.3 L171.3,48.3 L178.4,47.3 L184.3,47.7 L188.2,49.1 L192.3,53.0 L194.0,58.3 L193.8,63.9 L191.5,69.6 L185.9,76.0 L180.9,79.7 L171.5,84.8 L163.9,87.7 Z M102.7,122.1 L95.8,121.9 L87.8,119.8 L77.6,115.2 L68.5,109.8 L85.7,116.0 L98.3,118.3 L105.7,117.9 L112.8,116.4 L131.5,109.8 L123.7,114.5 L114.9,118.7 L108.2,121.0 L102.7,122.1 Z"/>
+      </svg>
+      Mask Bloc Directory
+    </a>
+    <button class="menu-btn mono" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="top" id="nav">
+      <a href="#map">Map</a>
+      <a href="#directory">Blocs</a>
+      <a href="#links">Resources</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#submit">Add a bloc</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero mesh">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--mint)">Mutual aid · We keep us safe</p>
+    <h1>Find a <em>Mask Bloc</em> near you.</h1>
+    <p class="lede">A community-maintained directory of groups giving out free high-quality masks, COVID-19 tests, and clean-air resources. No questions asked. Search the list, browse the map, or add your bloc.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#directory">Browse the directory</a>
+      <a class="btn btn-ghost" href="#submit">Add your bloc →</a>
+    </div>
+    <div class="stat"><b id="hero-count">—</b><span>blocs listed worldwide</span></div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <div class="wrap">
+    <p class="eyebrow">Worldwide</p>
+    <h2 class="sec">The map</h2>
+    <p class="sec-intro">Every bloc with a known location, plotted on one map. Pan, zoom, and tap a pin for contact details. Maintained alongside the directory below.</p>
+    <div class="map-frame">
+      <div id="map-canvas" role="application" aria-label="Interactive map of Mask Blocs"></div>
+    </div>
+    <p class="map-note">Pins are generated straight from the directory — every bloc with coordinates appears automatically. Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+  </div>
+</section>
+
+<!-- DIRECTORY -->
+<section id="directory" style="background:var(--paper-2)">
+  <div class="wrap">
+    <p class="eyebrow">The list</p>
+    <h2 class="sec">Mask Blocs &amp; community providers</h2>
+    <p class="sec-intro">Grouped by region. Use search to filter by name, place, or what they offer.</p>
+
+    <div class="controls">
+      <div class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" type="search" placeholder="Search blocs, cities, regions…" aria-label="Search blocs">
+      </div>
+      <select id="region" class="region-filter mono" aria-label="Filter by region"><option value="">All regions</option></select>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div id="results"></div>
+  </div>
+</section>
+
+<!-- SUBMIT -->
+<section id="submit" class="submit-sec">
+  <div class="wrap">
+    <p class="eyebrow">Contribute</p>
+    <h2 class="sec">Add or update a bloc</h2>
+    <p class="sec-intro">Submit your group and it’ll be reviewed by a human before going live on the directory and map. We verify every entry to keep the list trustworthy and safe.</p>
+
+    <div class="panel">
+      <form id="submit-form">
+        <div class="field">
+          <label for="f-name">Bloc name <span class="req">*</span></label>
+          <input id="f-name" name="name" required placeholder="e.g. Mask Bloc Springfield">
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="f-region">Region <span class="req">*</span></label>
+            <input id="f-region" name="region" required list="region-list" placeholder="e.g. USA – Midwest">
+            <datalist id="region-list"></datalist>
+          </div>
+          <div class="field">
+            <label for="f-location">Location <span class="hint">city / state</span></label>
+            <input id="f-location" name="location" placeholder="e.g. IL (Illinois)">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-desc">What you offer <span class="hint">short blurb</span></label>
+          <textarea id="f-desc" name="description" placeholder="Free N95s, rapid tests, air purifier loans… how people can reach you."></textarea>
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="f-status">Status</label>
+            <select id="f-status" name="status">
+              <option value="active">Active</option>
+              <option value="forming">Forming</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-type">Type <span class="hint">optional</span></label>
+            <select id="f-type" name="type">
+              <option value="mask-bloc">Mask Bloc</option>
+              <option value="clean-air">Clean Air</option>
+              <option value="advocacy">Advocacy</option>
+              <option value="care-collective">Care Collective</option>
+              <option value="student-led">Student Led</option>
+              <option value="charity">Charity</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-links">Links <span class="hint">one per line</span></label>
+          <textarea id="f-links" name="links" placeholder="Instagram: https://instagram.com/...&#10;Request form: https://..."></textarea>
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="f-lat">Latitude <span class="req">*</span></label>
+            <input id="f-lat" name="lat" type="number" step="any" required inputmode="decimal" placeholder="e.g. 39.7817">
+          </div>
+          <div class="field">
+            <label for="f-lng">Longitude <span class="req">*</span></label>
+            <input id="f-lng" name="lng" type="number" step="any" required inputmode="decimal" placeholder="e.g. -89.6501">
+          </div>
+        </div>
+        <p class="form-note">Find your coordinates by right-clicking your spot in Google Maps and copying the two numbers, or by searching your address at <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">openstreetmap.org</a> and reading them from the URL.</p>
+        <!-- honeypot anti-spam -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn-primary" style="margin-top:8px">Submit for review</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- LINKS -->
+<section id="links" class="links-sec" style="background:var(--paper-2)">
+  <div class="wrap">
+    <p class="eyebrow">Resources</p>
+    <h2 class="sec">Useful links</h2>
+    <p class="sec-intro">Other organizations providing support and information on COVID-19 and airborne illness.</p>
+    <div class="grid">
+      <div class="card"><h4>Texanalysis</h4><p>Respirator Info & Fit Testing.</p><div class="links"><a href="https://texanalysis.com//" target="_blank" rel="noopener">Website</a></div></div>
+      <div class="card"><h4>Pandemic Mitigation Collaborative</h4><p>The mission of the Pandemic Mitigation Collaborative is to reduce the physical and emotional burden of the COVID-19 pandemic.</p><div class="links"><a href="https://www.pmc19.com/" target="_blank" rel="noopener">Website</a></div></div>
+      <div class="card"><h4>COVID Action Map</h4><p>Mapping COVID action groups worldwide.</p><div class="links"><a href="https://www.instagram.com/covidactionmap/" target="_blank" rel="noopener">Instagram</a></div></div>
+      <div class="card"><h4>Public Health Action Network</h4><p>Nonprofit improving air quality and promoting evidence-based COVID-19 prevention.</p><div class="links"><a href="https://publichealthactionnetwork.org/" target="_blank" rel="noopener">Website</a></div></div>
+      <div class="card"><h4>Clean Air Lending Libraries</h4><p>A map tracking clean-air lending libraries around the world.</p><div class="links"><a href="https://www.google.com/maps/d/viewer?mid=1GVu8htPDJuVRgNWX9wU58s5xZXH2hiA" target="_blank" rel="noopener">Open map</a></div></div>
+      <div class="card"><h4>COVID Meetups</h4><p>Find individuals, families and businesses who take COVID precautions in your area.</p><div class="links"><a href="https://www.covidmeetups.com/" target="_blank" rel="noopener">Website</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap" style="max-width:760px">
+    <p class="eyebrow">About</p>
+    <h2 class="sec">What is a Mask Bloc?</h2>
+    <p class="sec-intro" style="max-width:none">Mask Blocs are volunteer-run mutual-aid groups that distribute free high-filtration masks (N95/KN95/FFP2), COVID-19 tests, and clean-air tools to their communities. No cost, no questions asked. They’re grounded in disability justice and the simple idea that <strong>we keep us safe</strong>. This directory exists so people can find the bloc nearest them, and so blocs can find each other.</p>
+    <p style="color:var(--ink-soft)">This is a community project and a successor in spirit to the original maskbloc.org. Listings are submitted by the public and reviewed by a human before publishing. To suggest an edit or removal, use the form above or get in touch on social media.</p>
+  </div>
+</section>
+
+<footer class="site mesh">
+  <div class="wrap">
+    <div class="tag"><svg class="logo-mask" viewBox="0 0 200 140" fill="none" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M103.4,115.4 L96.6,115.4 L89.3,114.1 L72.5,108.5 L52.2,98.2 L44.0,92.7 L40.2,89.1 L38.5,84.9 L37.0,78.6 L35.8,65.8 L36.0,58.7 L36.8,53.7 L38.1,50.7 L39.4,49.4 L100.2,38.0 L158.3,48.7 L160.2,49.1 L161.7,50.3 L163.2,53.4 L164.0,57.8 L164.2,68.1 L162.6,81.1 L160.9,87.0 L159.4,89.7 L156.6,92.3 L149.3,97.4 L132.3,106.4 L117.4,112.2 L109.9,114.3 L103.4,115.4 Z M149.9,44.5 L100.6,35.3 L50.0,44.2 L54.3,39.5 L61.6,34.7 L70.9,30.3 L85.7,25.0 L96.2,18.8 L99.0,17.9 L101.3,17.9 L105.2,19.4 L115.3,25.5 L124.9,28.6 L138.4,34.7 L145.7,39.5 L149.1,43.0 L149.9,44.5 Z M36.5,87.7 L28.1,84.6 L19.5,80.0 L13.6,75.6 L8.3,69.2 L6.2,63.7 L6.2,57.2 L7.9,52.8 L12.2,48.9 L15.7,47.7 L21.6,47.3 L29.8,48.5 L35.1,50.3 L34.0,53.5 L23.1,51.0 L17.8,51.0 L14.5,51.9 L11.0,54.7 L10.0,57.0 L9.6,61.4 L11.2,67.1 L15.7,72.6 L23.7,78.3 L35.2,83.5 L36.5,87.7 Z M163.9,87.7 L163.6,87.2 L164.8,83.5 L175.2,78.9 L183.8,73.0 L188.3,67.9 L190.4,62.2 L190.2,57.6 L189.2,54.9 L187.4,52.9 L185.1,51.7 L182.4,51.0 L176.9,51.0 L166.0,53.5 L164.9,50.3 L171.3,48.3 L178.4,47.3 L184.3,47.7 L188.2,49.1 L192.3,53.0 L194.0,58.3 L193.8,63.9 L191.5,69.6 L185.9,76.0 L180.9,79.7 L171.5,84.8 L163.9,87.7 Z M102.7,122.1 L95.8,121.9 L87.8,119.8 L77.6,115.2 L68.5,109.8 L85.7,116.0 L98.3,118.3 L105.7,117.9 L112.8,116.4 L131.5,109.8 L123.7,114.5 L114.9,118.7 L108.2,121.0 L102.7,122.1 Z"/></svg>We <em>♥</em> you.<br>We keep us safe.</div>
+    <div class="social">
+      <a href="#submit">Add a bloc</a>
+      <a href="#map">Map</a>
+      <a href="#directory">Directory</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="icon" href="https://instagram.com/worldwide.maskbloc/" target="_blank" rel="noopener" aria-label="Mask Bloc Directory on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4.25" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="17.25" cy="6.75" r="1.1" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="icon" href="mailto:maskbloc.worldwide@proton.me" aria-label="Email Mask Bloc Directory">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2.75" y="4.75" width="18.5" height="14.5" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M4 6.5L11.16 12.18a1.4 1.4 0 0 0 1.68 0L20 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <small>Community-maintained directory · Not medical advice · Listings reviewed before publishing.</small>
+  </div>
+</footer>
+
+<script>
+/* ---------- Config ---------- */
+// Paste your Formspree endpoint here (e.g. "https://formspree.io/f/abcdwxyz").
+// Leave as "" to use the no-backend mailto fallback.
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/maqzaozr";
+const CONTACT_EMAIL = "maskbloc.worldwide@proton.me"; // used only by the mailto fallback
+
+/* ---------- Load + render directory ---------- */
+const STATUS_LABELS = {
+  "active":"Active","forming":"Forming","inactive":"Inactive"
+};
+const TYPE_LABELS = {
+  "mask-bloc":"Mask Bloc","clean-air":"Clean Air","advocacy":"Advocacy",
+  "care-collective":"Care Collective","student-led":"Student Led","charity":"Charity"
+};
+let ALL = [];
+
+function esc(s){return (s==null?"":String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+function badgesHTML(b){
+  const status = b.status || "active";
+  const type = b.type || "mask-bloc";
+  const statusLabel = STATUS_LABELS[status] || STATUS_LABELS["active"];
+  const typeLabel = TYPE_LABELS[type] || TYPE_LABELS["mask-bloc"];
+  return `<div class="badges">
+    <span class="badge status-${esc(status)}">${esc(statusLabel)}</span>
+    <span class="badge type-${esc(type)}">${esc(typeLabel)}</span>
+  </div>`;
+}
+
+function cardHTML(b){
+  const links = (b.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+  return `<article class="card">
+    ${b.location?`<span class="loc">${esc(b.location)}</span>`:""}
+    <h4>${esc(b.name)}</h4>
+    ${badgesHTML(b)}
+    ${b.description?`<p>${esc(b.description)}</p>`:"<p></p>"}
+    ${links?`<div class="links">${links}</div>`:""}
+  </article>`;
+}
+
+function render(){
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const region = document.getElementById('region').value;
+  let list = ALL.filter(b=>{
+    if(region && b.region!==region) return false;
+    if(!q) return true;
+    const hay = [b.name,b.region,b.location,b.description,(b.links||[]).map(l=>l.label).join(" ")].join(" ").toLowerCase();
+    return hay.includes(q);
+  });
+
+  document.getElementById('count').textContent = list.length + (list.length===1?" bloc":" blocs");
+
+  const box = document.getElementById('results');
+  if(!list.length){
+    box.innerHTML = `<div class="empty"><b>No matches.</b><br>Try a broader search — or <a href="#submit">add a bloc</a> if it’s missing.</div>`;
+    return;
+  }
+  // group by region, preserve first-seen order
+  const groups = {};
+  const order = [];
+  list.forEach(b=>{ const r=b.region||"Other"; if(!groups[r]){groups[r]=[];order.push(r);} groups[r].push(b); });
+  box.innerHTML = order.map(r=>`
+    <div class="region-block">
+      <div class="region-head"><h3>${esc(r)}</h3><span class="rule"></span></div>
+      <div class="grid">${groups[r].map(cardHTML).join("")}</div>
+    </div>`).join("");
+}
+
+function populateRegions(){
+  const regions = [...new Set(ALL.map(b=>b.region).filter(Boolean))].sort();
+  const sel = document.getElementById('region');
+  const dl = document.getElementById('region-list');
+  regions.forEach(r=>{
+    const o=document.createElement('option');o.value=r;o.textContent=r;sel.appendChild(o);
+    const d=document.createElement('option');d.value=r;dl.appendChild(d);
+  });
+}
+
+/* ---------- Map (Leaflet + OpenStreetMap) ---------- */
+let MAP, MARKERS;
+function initMap(blocs){
+  if(typeof L === 'undefined'){ return; } // Leaflet failed to load; directory still works
+  MAP = L.map('map-canvas', { scrollWheelZoom:false, worldCopyJump:true }).setView([25, 0], 2);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(MAP);
+  // tap to enable wheel zoom, so the map doesn't hijack page scroll
+  MAP.on('click', ()=> MAP.scrollWheelZoom.enable());
+
+  const pin = L.divIcon({
+    className:'',
+    html:'<svg class="map-pin" width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg"><path d="M13 0C5.8 0 0 5.8 0 13c0 9 13 21 13 21s13-12 13-21C26 5.8 20.2 0 13 0z" fill="#159b86"/><circle cx="13" cy="13" r="5" fill="#f3f1e9"/></svg>',
+    iconSize:[26,34], iconAnchor:[13,34], popupAnchor:[0,-30]
+  });
+
+  const pts = [];
+  MARKERS = L.layerGroup().addTo(MAP);
+  blocs.forEach(b=>{
+    const lat = parseFloat(b.lat), lng = parseFloat(b.lng);
+    if(isNaN(lat) || isNaN(lng)) return;
+    pts.push([lat,lng]);
+    const links = (b.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+    const html = `<div>
+      ${b.location?`<span class="pop-loc">${esc(b.location)}</span>`:""}
+      <span class="pop-name">${esc(b.name)}</span>
+      ${badgesHTML(b)}
+      ${b.description?`<p class="pop-desc">${esc(b.description)}</p>`:""}
+      ${links?`<div class="pop-links">${links}</div>`:""}
+    </div>`;
+    L.marker([lat,lng], {icon:pin, title:b.name}).addTo(MARKERS).bindPopup(html);
+  });
+  if(pts.length){ MAP.fitBounds(pts, { padding:[40,40], maxZoom:6 }); }
+}
+
+fetch('blocs.json',{cache:'no-store'})
+  .then(r=>r.json())
+  .then(data=>{
+    ALL = (data.blocs||[]).slice().sort((a,b)=> (a.region||"").localeCompare(b.region||"") || (a.name||"").localeCompare(b.name||""));
+    document.getElementById('hero-count').textContent = ALL.length;
+    populateRegions();
+    render();
+    initMap(ALL);
+  })
+  .catch(()=>{ document.getElementById('results').innerHTML = `<div class="empty"><b>Couldn’t load the directory.</b><br>If you’re opening this file directly, run it through a local server so blocs.json can load.</div>`; });
+
+document.getElementById('q').addEventListener('input', render);
+document.getElementById('region').addEventListener('change', render);
+
+/* ---------- Submission ---------- */
+const form = document.getElementById('submit-form');
+const statusEl = document.getElementById('form-status');
+
+function show(type,msg){ statusEl.className = "form-status "+type; statusEl.textContent = msg; }
+
+form.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  if(form._gotcha && form._gotcha.value){ return; } // bot trap
+
+  const fd = new FormData(form);
+  const payload = Object.fromEntries(fd.entries());
+  delete payload._gotcha;
+  payload._subject = "New Mask Bloc submission: " + (payload.name||"(no name)");
+
+  // No backend configured → fall back to opening an email
+  if(!FORMSPREE_ENDPOINT){
+    const body = encodeURIComponent(
+      "New bloc submission — please review before adding to blocs.json:\n\n" +
+      Object.entries(payload).filter(([k])=>k[0]!=="_").map(([k,v])=>k+": "+v).join("\n")
+    );
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(payload._subject)}&body=${body}`;
+    show('ok','Opening your email app so you can send the submission for review. Thank you!');
+    form.reset();
+    return;
+  }
+
+  try{
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method:'POST', headers:{'Accept':'application/json'}, body: fd
+    });
+    if(res.ok){
+      show('ok','Thank you — your submission was received and will be reviewed by a human before going live.');
+      form.reset();
+    }else{
+      show('err','Something went wrong submitting the form. Please try again, or reach out on social media.');
+    }
+  }catch(err){
+    show('err','Network error — please check your connection and try again.');
+  }
+});
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mask Bloc Directory — Find your local Mask Bloc</title>
+<meta name="description" content="A community-maintained directory of active Mask Blocs around the world. Free high-quality masks, COVID-19 tests, and clean-air resources. We keep us safe.">
+<meta property="og:title" content="Mask Bloc Directory — Find your local Mask Bloc">
+<meta property="og:description" content="A community-maintained directory of active Mask Blocs worldwide. Free masks, tests, and clean-air resources.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+  :root{
+    --ink:#10302e;          /* deep teal-ink, near black */
+    --ink-soft:#2b4f4c;
+    --paper:#f3f1e9;        /* warm clean paper */
+    --paper-2:#e9e6da;
+    --mint:#7fd1be;         /* clean-air mint accent */
+    --mint-deep:#159b86;
+    --amber:#e0a23b;        /* status: getting started / warning */
+    --rust:#b85c4a;         /* status: inactive */
+    --violet:#8a7fc4;       /* status: clean air / care */
+    --line:rgba(16,48,46,.16);
+    --shadow:0 1px 0 rgba(16,48,46,.04);
+    --maxw:1160px;
+    --r:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Spline Sans",system-ui,sans-serif;
+    font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--mint-deep);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .mono{font-family:"Spline Sans Mono",ui-monospace,monospace}
+
+  /* ---- Filtration mesh signature (subtle hex weave) ---- */
+  .mesh{
+    background-color:var(--ink);
+    background-image:
+      radial-gradient(circle at 50% 50%, rgba(127,209,190,.10) 0 1.4px, transparent 1.6px),
+      radial-gradient(circle at 0% 50%, rgba(127,209,190,.10) 0 1.4px, transparent 1.6px),
+      radial-gradient(circle at 100% 50%, rgba(127,209,190,.10) 0 1.4px, transparent 1.6px);
+    background-size:34px 58px;
+    background-position:0 0,0 0,0 0;
+  }
+
+  /* ---- Header ---- */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(243,241,233,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;gap:18px;height:64px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Fraunces",serif;font-weight:600;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
+  .brand:hover{text-decoration:none}
+  .brand svg{flex:none}
+  .logo-mask{color:var(--mint-deep)}
+  footer .tag .logo-mask{color:var(--mint);width:54px;height:38px;display:block;margin-bottom:14px}
+  nav.top{margin-left:auto;display:flex;gap:6px;align-items:center}
+  nav.top a{color:var(--ink-soft);font-size:14.5px;padding:8px 12px;border-radius:9px}
+  nav.top a:hover{background:var(--paper-2);text-decoration:none}
+  nav.top a.cta{background:var(--ink);color:var(--paper)}
+  nav.top a.cta:hover{background:var(--ink-soft)}
+  .menu-btn{display:none}
+
+  /* ---- Hero ---- */
+  .hero{position:relative;overflow:hidden;color:var(--paper)}
+  .hero .wrap{position:relative;z-index:2;padding:74px 22px 84px}
+  .hero h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(40px,7vw,72px);line-height:1.02;letter-spacing:-.02em;margin:0 0 18px;max-width:14ch}
+  .hero h1 em{font-style:italic;color:var(--mint)}
+  .hero p.lede{font-size:clamp(17px,2.2vw,21px);max-width:54ch;color:rgba(243,241,233,.86);margin:0 0 30px}
+  .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:500;font-size:15.5px;padding:13px 20px;border-radius:11px;border:1px solid transparent;cursor:pointer;transition:.15s}
+  .btn-primary{background:var(--mint);color:var(--ink)}
+  .btn-primary:hover{background:#9ee0d0;text-decoration:none}
+  .btn-ghost{background:transparent;color:var(--paper);border-color:rgba(243,241,233,.34)}
+  .btn-ghost:hover{background:rgba(243,241,233,.08);text-decoration:none}
+  .hero .stat{margin-top:34px;display:flex;align-items:baseline;gap:10px;font-family:"Spline Sans Mono",monospace}
+  .hero .stat b{font-size:30px;color:var(--mint);font-weight:600}
+  .hero .stat span{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(243,241,233,.6)}
+
+  /* ---- Section scaffolding ---- */
+  section{padding:64px 0}
+  .eyebrow{font-family:"Spline Sans Mono",monospace;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint-deep);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--mint-deep);display:inline-block}
+  h2.sec{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-.015em;margin:0 0 14px}
+  .sec-intro{max-width:60ch;color:var(--ink-soft);margin:0 0 30px}
+
+  /* ---- Map ---- */
+  .map-frame{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper-2);box-shadow:var(--shadow)}
+  #map-canvas{width:100%;height:560px;background:#dfe7e0}
+  .leaflet-container{font-family:"Spline Sans",sans-serif}
+  .leaflet-popup-content-wrapper{border-radius:12px;box-shadow:0 8px 24px rgba(16,48,46,.18)}
+  .leaflet-popup-content{margin:14px 16px;line-height:1.45}
+  .pop-loc{font-family:"Spline Sans Mono",monospace;font-size:10.5px;letter-spacing:.05em;color:var(--mint-deep);text-transform:uppercase;display:block;margin-bottom:3px}
+  .pop-name{font-family:"Fraunces",serif;font-weight:600;font-size:17px;color:var(--ink);display:block;margin-bottom:5px}
+  .pop-desc{font-size:13px;color:var(--ink-soft);margin:0 0 8px}
+  .pop-links{display:flex;flex-wrap:wrap;gap:6px}
+  .pop-links a{font-size:12px;padding:4px 9px;border:1px solid var(--line);border-radius:7px;color:var(--ink-soft)}
+  .pop-links a:hover{border-color:var(--mint-deep);color:var(--mint-deep);text-decoration:none}
+  .map-pin{filter:drop-shadow(0 2px 3px rgba(16,48,46,.3))}
+  .map-note{font-size:13.5px;color:var(--ink-soft);margin-top:12px}
+
+  /* ---- Directory controls ---- */
+  .controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+  .search{flex:1;min-width:240px;position:relative}
+  .search input{width:100%;font:inherit;font-size:16px;padding:13px 15px 13px 42px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink)}
+  .search input:focus{outline:2px solid var(--mint);outline-offset:1px;border-color:transparent}
+  .search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.5}
+  select.region-filter{font:inherit;font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);cursor:pointer}
+  .count{font-family:"Spline Sans Mono",monospace;font-size:13px;color:var(--ink-soft);white-space:nowrap}
+
+  /* ---- Region groups + cards ---- */
+  .region-block{margin-bottom:40px}
+  .region-head{display:flex;align-items:center;gap:14px;margin:0 0 18px}
+  .region-head h3{font-family:"Spline Sans Mono",monospace;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:0}
+  .region-head .rule{flex:1;height:1px;background:var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:11px;box-shadow:var(--shadow);transition:.15s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(16,48,46,.09);border-color:rgba(16,48,46,.26)}
+  .card .loc{font-family:"Spline Sans Mono",monospace;font-size:11.5px;letter-spacing:.05em;color:var(--mint-deep);text-transform:uppercase}
+  .card h4{font-family:"Fraunces",serif;font-weight:600;font-size:20px;line-height:1.15;margin:0}
+  .card p{font-size:14.5px;color:var(--ink-soft);margin:0;flex:1}
   .badge{align-self:flex-start;font-family:"Spline Sans Mono",monospace;font-size:11px;letter-spacing:.04em;padding:3px 9px;border-radius:30px;text-transform:uppercase;font-weight:500}
   .badge.active{background:rgba(21,155,134,.13);color:var(--mint-deep)}
   .badge.getting-started{background:rgba(224,162,59,.16);color:#9a6c12}
