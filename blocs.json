@@ -151,8 +151,8 @@
     },
     {
       "name": "Covid Naarm Mask Bloc",
-      "region": "Kulin Nation - Australia",
-      "location": "Naarm or so-called Melbourne, AU (Australia)",
+      "region": "Oceania",
+      "location": "Naarm or so-called Melbourne, AU (Kulin Nation - Australia)",
       "description": "We offer free respirators (KF94, KN95, N95 & P2), rapid tests, menstrual supplies, zines, and we are starting to distribute free air purifiers for local community spaces.",
       "status": "active",
       "links": [
@@ -176,6 +176,21 @@
       ],
       "lat": 42.24019,
       "lng": -83.61482
+    },
+    {
+      "name": "Aotearoa Mask Bloc Pōneke",
+      "region": "Oceania",
+      "location": "Wellington, NZ (New Zealand)",
+      "description": "Free N95s and KN95s, info about how to choose a mask.",
+      "status": "active",
+      "links": [
+        { "label": "Website", "url": "https://lnk.bio/AotearoaMaskBloc/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/aotearoamaskbloc/" },
+        { "label": "facebook", "url": "https://www.facebook.com/aotearoamaskbloc//" },
+        { "label": "facebook", "url": "https://www.facebook.com/aotearoamaskbloc//" }
+      ],
+      "lat": -41.2866,
+      "lng": 174.7756
     }
   ]
 }
