@@ -307,7 +307,7 @@
     },
     {
       "name": "Still COVIDing Canada",
-      "region": "Canada",
+      "region": "Canada - Central",
       "location": "Ottawa, ON (Ontario)",
       "description": "Bilingual website with action alerts, resource pages, information about masks, and over 3,300 news clippings about COVID-19 and other health issues.",
       "status": "active",
@@ -336,6 +336,19 @@
       ],
       "lat": 40.8540,
       "lng": -73.9312
+    },
+    {
+      "name": "Mask Bloc Sask",
+      "region": "Canada - Praires",
+      "location": "Regina, SK (Saskatchewan)",
+      "description": "Free respirator masks in Regina and Saskatoon (delivery and community pantry/org/event distribution) and covid rapid tests (when funding allows).",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "http://linktr.ee/maskblocsask/" }
+      ],
+      "lat": 50.447090,
+      "lng": -104.618163
     }
   ]
 }
