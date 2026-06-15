@@ -404,6 +404,19 @@
       ],
       "lat": 49.8503353,
       "lng": 2.3070256
+    },
+     {
+      "name": "S.W.A.M.P. Central Florida",
+      "region": "USA - South",
+      "location": "Orlando, FL (Florida)",
+      "description": "Masks for all via mail or various baskets available.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/swampcentralfl" }
+      ],
+      "lat": 28.5356194,
+      "lng": -81.3820504
     }
   ]
 }
