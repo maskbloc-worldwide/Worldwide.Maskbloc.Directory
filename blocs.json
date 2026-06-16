@@ -525,6 +525,20 @@
       ],
       "lat": 49.17376,
       "lng": -0.38139
+    },
+        {
+      "name": "Bluff City Mask Bloc",
+      "region": "USA - South",
+      "location": "Memphis, TN (Tennessee)",
+      "description": "Free high-filtration masks and zines. Email bluffcitymaskbloc@proton.me for any questions.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/bluffcitymaskbloc//" },
+        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/zbfqal4QVQIWUkwY6b-I0TY1ww5Lv0AEHVt1TJ3xA44/" }
+      ],
+      "lat": 35.149532,
+      "lng": -90.048981
     }
   ]
 }
