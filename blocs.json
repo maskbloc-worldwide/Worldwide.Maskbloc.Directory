@@ -526,7 +526,7 @@
       "lat": 49.17376,
       "lng": -0.38139
     },
-        {
+    {
       "name": "Bluff City Mask Bloc",
       "region": "USA - South",
       "location": "Memphis, TN (Tennessee)",
@@ -534,11 +534,39 @@
       "status": "active",
       "type": "mask-bloc",
       "links": [
-        { "label": "Instagram", "url": "https://www.instagram.com/bluffcitymaskbloc//" },
+        { "label": "Instagram", "url": "https://www.instagram.com/bluffcitymaskbloc/" },
         { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/zbfqal4QVQIWUkwY6b-I0TY1ww5Lv0AEHVt1TJ3xA44/" }
       ],
       "lat": 35.149532,
       "lng": -90.048981
+    },
+    {
+      "name": "Mask Bloc Seattle",
+      "region": "USA - West",
+      "location": "Seattle, WA (Washington)",
+      "description": "distro & mutual aid for hi fi masks & tests on unceded dxʷdəwʔabš land.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocseattle/" },
+        { "label": "Linktree", "url": "https://linktr.ee/maskblocseattle" }
+      ],
+      "lat": 47.619148,
+      "lng": -122.320278
+    },
+    {
+      "name": "Belchertown Mask Bloc",
+      "region": "USA - Northeast",
+      "location": "Belchertown, MA (Massachusetts)",
+      "description": "Mutual aid project to distribute free KN95 + N95 masks (and tests when available) in Belchertown/Western MA. DM us on Instagram or email btownmaskbloc@proton.me to request free masks & tests or ask us to share your mask-required event!",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/btownmaskbloc/" },
+        { "label": "Linktree", "url": "https://linktr.ee/btownmaskbloc" }
+      ],
+      "lat": 42.276514,
+      "lng": -72.399129
     }
   ]
 }
