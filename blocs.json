@@ -459,6 +459,19 @@
       ],
       "lat": -27.47020,
       "lng": 153.02685
+    },
+    {
+      "name": "Mask Bloc Toronto",
+      "region": "Canada - Central",
+      "location": "Toronto, ON (Canada)",
+      "description": "Free KN95s and N95s, free rapid tests.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskbloctoronto" }
+      ],
+      "lat": 43.651070,
+      "lng": -79.347015
     }
   ]
 }
