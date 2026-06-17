@@ -609,6 +609,20 @@
       ],
       "lat": 39.951060,
       "lng": -75.165620
+    },
+    {
+      "name": "Mask Bloc Denver",
+      "region": "USA - West",
+      "location": "Denver, CO (Colorado)",
+      "description": "Free masks, tests, air purifier loans, and more to protect against airborne hazards on hinono’eino’ biito’owu’, Núu-agha-tʉvʉ-pʉ̱, Očhéthi Šakówiŋ, Tsétsėhéstȧhese/Tsitsistas/Só’taeo’o land (“Denver” Metro Area) and beyond. Respiradores, preubas de COVID/gripe, préstamos de purificador de aire gratis y más para protegerse de peligros transmiten por el aire en la tierra indígena de hinono’eino’ biito’owu’, Núu-agha-tʉvʉ-pʉ̱, Očhéthi Šakówiŋ, Tsétsėhéstȧhese/Tsitsistas/Só’taeo’o (el área metropolitana de 'Denver') y más allá.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://maskblocdenver.org/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocdenver/" }
+      ],
+      "lat": 39.739338,
+      "lng": -104.984812
     }
   ]
 }
