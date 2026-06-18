@@ -59,7 +59,7 @@
       "lng": -97.0377
     },
     {
-      "name": "South Eastern Pennsylvania Airborne Safety Bloc",
+      "name": "SEPAS (South Eastern Pennsylvania Airborne Safety) Bloc",
       "region": "USA - Northeast",
       "location": "Philly, PA (Pennsylvania)",
       "description": "Now avail for distro in the Greater Philly Area: masks, covid tests, airborne safety ed, + public health & harm redux goods 😷 More comrades always welcome 💙 We are on crip time🦋.",
@@ -602,7 +602,7 @@
       "location": "Philadelphia, PA (Pennsylvania)",
       "description": "Borrow HEPA air purifiers for free, no questions asked. Abolitionist project for disability justice, connecting folks to other free resources, mask-required events, and mutual aid in so-called Philadelphia.",
       "status": "active",
-      "type": "mask-bloc",
+      "type": "clean-air",
       "links": [
         { "label": "Instagram", "url": "https://www.instagram.com/peoplesfilter" },
         { "label": "Linktree", "url": "https://linktr.ee/phillycovidsaferevents" }
@@ -624,7 +624,7 @@
       "lat": 39.739338,
       "lng": -104.984812
     },
-     {
+    {
       "name": "Mendo Clean Air Club",
       "region": "USA - West",
       "location": "Mendocino County, CA (California)",
@@ -638,6 +638,37 @@
       ],
       "lat": 39.14748167597534,
       "lng": -123.20710627142549
+    },
+    {
+      "name": "Mask Bloc West",
+      "region": "Oceania",
+      "location": "Footscray, VIC (Australia)",
+      "description": "anarchist antifascist mutual aid. free respirators from stolen Wurundjeri and Boonwurrung country posted to anywhere in so-called 'australia'. pick up free masks and zines in person from angliss neighbourhood house, 2/11 vipoint street, footscray. email us for larger local requests maskblocwest@protonmail.com.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/maskblocwest" },
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocwest/" }      
+      ],
+      "lat": -37.797687252883804,
+      "lng": 144.90792453289035
+    },
+    {
+      "name": "Mask Bloc Bordeaux",
+      "region": "Europe",
+      "location": "Bordeaux, FR (France)",
+      "description": "Dons de masques FFP2 (divers modèles), flyers, prêt de purificateurs, nous sommes disponibles pour faire des interventions en évènements ou discuter pour partager des ressources sur l'autodéfense sanitaire/l'accessibilité en général !",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/MaskBlocBdx" },
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocbordeaux/" },
+        { "label": "Bsky", "url": "https://bsky.app/profile/maskblocbordeaux.bsky.social/" }, 
+        { "label": "Facebook", "url": "https://www.facebook.com/profile.php?id=61550641361178/" },
+        { "label": "X/Twitter", "url": "https://x.com/MaskBlocBdx/" }     
+      ],
+      "lat": 44.84175610493219,
+      "lng": -0.5761149866258236
     }
   ]
 }
