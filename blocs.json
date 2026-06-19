@@ -669,6 +669,34 @@
       ],
       "lat": 44.84175610493219,
       "lng": -0.5761149866258236
+    },
+    {
+      "name": "Mask Bloc Montpellier",
+      "region": "Europe",
+      "location": "Montpellier, OCC (France)",
+      "description": "Free FFP2 / KN95.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://mask-bloc-montpellier.neocities.org/" } 
+      ],
+      "lat": 43.60935598558736,
+      "lng": 3.8801446000300444
+    },
+    {
+      "name": "Mask Bloc Niagara",
+      "region": "Canada - Central",
+      "location": "Niagara Region, ON (Ontario)",
+      "description": "Free KN95 and N95 masks, lendable purifier, zines. Reach us on our socials @ Radical Care Collective, or email us radicalcarecollective@protonmail.com.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/radicalcarecollective" },
+        { "label": "Mask Request Form", "url": "https://bit.ly/4cYNOeO" },
+        { "label": "Purifier Request Form", "url": "https://bit.ly/4cYZK04" }        
+      ],
+      "lat": 43.158381,
+      "lng": -79.250629
     }
   ]
 }
