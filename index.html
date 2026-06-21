@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mask Bloc Directory — Find your local Mask Bloc</title>
+<title>Mask Bloc Directory - Find your local Mask Bloc</title>
 <meta name="description" content="A community-maintained directory of active Mask Blocs around the world. Free high-quality masks, COVID-19 tests, and clean-air resources. We keep us safe.">
 <meta property="og:title" content="Mask Bloc Directory — Find your local Mask Bloc">
 <meta property="og:description" content="A community-maintained directory of active Mask Blocs worldwide. Free masks, tests, and clean-air resources.">
@@ -226,7 +226,7 @@
     <div class="map-frame">
       <div id="map-canvas" role="application" aria-label="Interactive map of Mask Blocs"></div>
     </div>
-    <p class="map-note">Pins are generated straight from the directory — every bloc with coordinates appears automatically. Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+    <p class="map-note">Pins are generated straight from the directory - every bloc with coordinates appears automatically. Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
   </div>
 </section>
 
@@ -395,6 +395,14 @@ let ALL = [];
 
 function esc(s){return (s==null?"":String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
+// Only allow http(s)/mailto links through to an href. Blocks javascript:, data:, etc.
+function safeURL(u){
+  try{
+    const url = new URL(String(u), location.href);
+    return (url.protocol === "https:" || url.protocol === "http:" || url.protocol === "mailto:") ? url.href : "#";
+  }catch{ return "#"; }
+}
+
 function badgesHTML(b){
   const status = b.status || "active";
   const type = b.type || "mask-bloc";
@@ -407,7 +415,7 @@ function badgesHTML(b){
 }
 
 function cardHTML(b){
-  const links = (b.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+  const links = (b.links||[]).map(l=>`<a href="${esc(safeURL(l.url))}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
   return `<article class="card">
     ${b.location?`<span class="loc">${esc(b.location)}</span>`:""}
     <h4>${esc(b.name)}</h4>
@@ -479,7 +487,7 @@ function initMap(blocs){
     const lat = parseFloat(b.lat), lng = parseFloat(b.lng);
     if(isNaN(lat) || isNaN(lng)) return;
     pts.push([lat,lng]);
-    const links = (b.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+    const links = (b.links||[]).map(l=>`<a href="${esc(safeURL(l.url))}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
     const html = `<div>
       ${b.location?`<span class="pop-loc">${esc(b.location)}</span>`:""}
       <span class="pop-name">${esc(b.name)}</span>
