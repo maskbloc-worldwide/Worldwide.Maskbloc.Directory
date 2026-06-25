@@ -822,6 +822,20 @@
       ],
       "lat": 34.42416632196007,
       "lng": -119.70357324801094
+    },
+    {
+      "name": "Mask Bloc Buffalo",
+      "region": "USA - Northeast",
+      "location": "Buffalo, NY, (New York)",
+      "description": "Queer-/trans-informed community healthcare providing free quality face masks, COVID-19 tests, and additional resources in the Buffalo/WNY area 😷❤️🦬",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocbuffalo" },
+        { "label": "Rewquest Form", "url": "https://docs.google.com/forms/d/1Ggiibc7t7ziwG9__Sw0akE76q0rwXj36PiplKAOHCzQ/viewform" }      
+      ],
+      "lat": 42.916473,
+      "lng": -78.877037
     }
   ]
 }
