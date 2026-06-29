@@ -826,7 +826,7 @@
     {
       "name": "Mask Bloc Buffalo",
       "region": "USA - Northeast",
-      "location": "Buffalo, NY, (New York)",
+      "location": "Buffalo, NY (New York)",
       "description": "Queer-/trans-informed community healthcare providing free quality face masks, COVID-19 tests, and additional resources in the Buffalo/WNY area 😷❤️🦬",
       "status": "active",
       "type": "mask-bloc",
@@ -836,6 +836,19 @@
       ],
       "lat": 42.916473,
       "lng": -78.877037
+    },
+    {
+      "name": "Ohio Clean Air Coalition",
+      "region": "USA - Midwest",
+      "location": "Columbus, OH (Ohio)",
+      "description": "Air purifier loans, masks and rapid COVID tests",
+      "status": "active",
+      "type": "clean-air",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/ohiocleanaircoalition" }
+      ],
+      "lat": 39.961968300305,
+      "lng": -83.00305
     }
   ]
 }
