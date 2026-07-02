@@ -877,6 +877,22 @@
       ],
       "lat": 41.4960034258086,
       "lng": -81.56484783122401
+    },
+    {
+      "name": "Cleveland Pandemic Response",
+      "region": "USA - Midwest",
+      "location": "Cleveland, OH (Ohio)",
+      "description": "K/n95s for adults and kids, covid tests, care kits, diapers, pads, tampons, reproductive health care items and other harm reduction supplies.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Request Form", "url": "https://tinyurl.com/requestCPR" },
+        { "label": "Instagram", "url": "https://www.instagram.com/cprcle" },
+        { "label": "Facebook", "url": "https://facebook.com/cprcle" },
+        { "label": "Website", "url": "Cprcle.org" }        
+      ],
+      "lat": 41.49958,
+      "lng": -81.69331
     }
   ]
 }
