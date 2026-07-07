@@ -893,6 +893,21 @@
       ],
       "lat": 41.49958,
       "lng": -81.69331
+    },
+    {
+      "name": "816 Covid Crew",
+      "region": "USA - Midwest",
+      "location": "Kansas City, KS / Kansas City, MO (Kansas / Missouri)",
+      "description": "816 COVID Crew is a nonhierarchical mutual aid project¹ started in early 2024. We are organizing to build solidarity and redistribute resources among residents of the greater “Kansas City” metro area. This is in response both to the ongoing COVID-19 pandemic and in preparation for future crises.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/816covidcrew/" },
+        { "label": "Paage", "url": "https://paa.ge/816covidcrew/en" },
+        { "label": "Contact & Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/v4BWjI7LZ83zmNgiyVSbBeZtCU7twt5pFz0vVvIdMeI/embed/" }       
+      ],
+      "lat": 39.104472,
+      "lng": -94.607037
     }
   ]
 }
