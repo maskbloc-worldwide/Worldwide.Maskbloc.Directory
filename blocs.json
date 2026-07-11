@@ -908,6 +908,68 @@
       ],
       "lat": 39.104472,
       "lng": -94.607037
+    },
+    {
+      "name": "Mask Bloc Halifax",
+      "region": "Canada - Atlantic",
+      "location": "Halifax, NS (Nova Scotia)",
+      "description": "Free N95s in adult and kid's sizes for events and individuals, we stock kits of masks in community pantries and local businesses.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskbloc.hfx/" },
+        { "label": "Map of Distro Sites", "url": "https://mask-bloc-hfx.netlify.app/" }
+      ],
+      "lat": 44.65006499559517,
+      "lng": -63.597429712025246
+    },
+    {
+      "name": "KE Mask Bloc 254",
+      "region": "Africa",
+      "location": "Uasin Gishu, Eldoret (Kenya)",
+      "description": "Based in Kenya. For East Africa and beyond. Need masks? Mask Bloc 254 is a mutual aid network focused on distributing free and accessible personal protective equipment (PPE) in East Africa to the common mwananchi..",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskbloc254/" },
+        { "label": "Facebook", "url": "https://www.facebook.com/people/KE-Mask-Bloc-254/61579737745365/?locale=en_GB" },
+        { "label": "Bluesky", "url": "https://bsky.app/profile/maskbloc254.bsky.social" },
+        { "label": "X/Twitter", "url": "https://x.com/maskbloc254" },
+        { "label": "Threads", "url": "https://www.threads.com/@maskbloc254" },
+        { "label": "Tiktok", "url": "https://www.tiktok.com/@maskbloc254" },
+        { "label": "Linktree", "url": "http://linktr.ee/maskbloc254" },
+        { "label": "Mask request Form", "url": "https://cryptpad.fr/form/#/2/form/view/DihmEVwbnwCILw8Iui1K8fu7cLK4YZ-vvAe86TpiyHM" },
+        { "label": "Email", "url": "maskbloc254@proton.me" },
+        { "label": "Whatsapp", "url": "https://api.whatsapp.com/send?phone=254751662652" }  
+      ],
+      "lat": 0.5182383,
+      "lng": 35.2762003
+    },
+    {
+      "name": "Mask Up Baltimore",
+      "region": "USA - Northeast",
+      "location": "Baltimore, MD (Maryland)",
+      "description": "Free masks/respirators and covid rapid tests. We do deliveries and tabling at events around the city.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/maskupbalt" }
+      ],
+      "lat": 39.282787,
+      "lng": -76.607366
+    },
+    {
+      "name": "Solo el pueblo cuida al pueblo",
+      "region": "South America",
+      "location": "Santiago, RM (Chile)",
+      "description": "Grupo de ayuda mutua que entrega mascarillas, herramientas de aire limpio, información de salud y recursos educativos en Santiago, CL.",
+      "status": "active",
+      "type": "care-collective",
+      "links": [
+        { "label": "Carrd", "url": "https://soloelpueblocuidaalpueblo.carrd.co/" }
+      ],
+      "lat": -33.45694,
+      "lng": -70.64827
     }
   ]
 }
