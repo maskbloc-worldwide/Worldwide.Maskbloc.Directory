@@ -970,6 +970,19 @@
       ],
       "lat": -33.45694,
       "lng": -70.64827
+    },
+    {
+      "name": "MKE Mask Bloc",
+      "region": "USA - Midwest",
+      "location": "Milwaukee, WI (Wisconsin)",
+      "description": "Free N95s/KN95s including kids sizes.",
+      "status": "inactive",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocmke/" }
+      ],
+      "lat": 43.08918,
+      "lng": -87.88758
     }
   ]
 }
