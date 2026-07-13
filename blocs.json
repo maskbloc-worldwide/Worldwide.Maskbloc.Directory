@@ -979,7 +979,8 @@
       "status": "inactive",
       "type": "mask-bloc",
       "links": [
-        { "label": "Instagram", "url": "https://www.instagram.com/maskblocmke/" }
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocmke/" },
+        { "label": "Carrd", "url": "https://maskupmke.carrd.co/" }
       ],
       "lat": 43.08918,
       "lng": -87.88758
