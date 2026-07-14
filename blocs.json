@@ -976,14 +976,13 @@
       "region": "USA - Midwest",
       "location": "Milwaukee, WI (Wisconsin)",
       "description": "Free N95s/KN95s including kids sizes.",
-      "status": "inactive",
+      "status": "active",
       "type": "mask-bloc",
       "links": [
-        { "label": "Instagram", "url": "https://www.instagram.com/maskblocmke/" },
-        { "label": "Carrd", "url": "https://maskupmke.carrd.co/" }
+        { "label": "Email", "url": "mkemaskbloc@proton.me" }
       ],
       "lat": 43.08918,
       "lng": -87.88758
-    }
+    },
   ]
 }
