@@ -979,7 +979,8 @@
       "status": "active",
       "type": "mask-bloc",
       "links": [
-        { "label": "Email", "url": "mkemaskbloc@proton.me" }
+        { "label": "Email", "url": "mkemaskbloc@proton.me" },
+        { "label": "Mastodon", "url": "https://mastodon.social/@MKEmaskbloc" }        
       ],
       "lat": 43.08918,
       "lng": -87.88758
