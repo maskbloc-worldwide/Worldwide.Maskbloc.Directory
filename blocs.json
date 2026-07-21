@@ -984,6 +984,20 @@
       ],
       "lat": 43.08918,
       "lng": -87.88758
+    },
+    {
+      "name": "Mask bloc Waterloo Region",
+      "region": "Canada - Central",
+      "location": "Waterloo, ON (Ontario)",
+      "description": "Free N95, kn95, covid tests, air purifier rentals, education, and organizing.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "MaskBlocWR.org" },
+        { "label": "Mastodon", "url": "https://mastodon.social/@MKEmaskbloc" }        
+      ],
+      "lat": 43.460112,
+      "lng": -80.572432
     }
   ]
 }
