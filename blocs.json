@@ -998,6 +998,51 @@
       ],
       "lat": 43.460112,
       "lng": -80.572432
+    },
+    {
+      "name": "Mask Up Rochester",
+      "region": "USA - Northeast",
+      "location": "Rochester, NY (New York)",
+      "description": "Free N95s, KN95s, educational materials, and COVID tests when available.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/MaskUpRochester" },
+        { "label": "instagram", "url": "https://www.instagram.com/maskuprochester" },
+        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/eORUiK9ZA3hZbm4mMMHwKazVP0BIyGgdjb2DbwzWS68/" }        
+      ],
+      "lat": 43.161030,
+      "lng": -77.610924
+    },
+    {
+      "name": "Charlotte Mask Bloc",
+      "region": "USA - Southeast",
+      "location": "Charlotte, NC (North Carolina)",
+      "description": "Free N95s, KN95s, educational materials, and COVID tests when available.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/charlottemaskbloc" },
+        { "label": "Website", "url": "https://www.cltmaskbloc.org/" },
+        { "label": "Fundraising", "url": "https://opencollective.com/charlotte-mask-bloc" },
+        { "label": "Request Form", "url": "https://docs.google.com/forms/d/e/1FAIpQLSd5AnbMfikMra_xol2L2nwcSFcrP_lvbM6FA_afLmRpkaO5sQ/viewform" }        
+        
+      ],
+      "lat": 35.227085,
+      "lng": -80.843124
+    },
+    {
+      "name": "COVID Realist Outdoors Club NYC (CROC)",
+      "region": "USA - Northeast",
+      "location": "New York City, NY (New York)",
+      "description": "COVID Realist Outdoors Club NYC (CROC) is a community group that organizes outdoors events for Black, Indigenous, and otherwise racialized people taking airborne precautions. CROC also stewards PPE hubs around New York City that provide free masks and rapid antigen tests to anyone in need.",
+      "status": "active",
+      "type": "care-collective",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/cr.outdoorsclub.nyc" }       
+      ],
+      "lat": 40.75135830746201,
+      "lng": -73.9923974937885
     }
   ]
 }
