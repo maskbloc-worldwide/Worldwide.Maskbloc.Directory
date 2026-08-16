@@ -1043,6 +1043,21 @@
       ],
       "lat": 40.75135830746201,
       "lng": -73.9923974937885
+    },
+    {
+      "name": "Aotearoa Mask Bloc Ōtepoti",
+      "region": "Oceania",
+      "location": "Dunedin, NZ (New Zealand)",
+      "description": "COVID Realist Outdoors Club NYC (CROC) is a community group that organizes outdoors events for Black, Indigenous, and otherwise racialized people taking airborne precautions. CROC also stewards PPE hubs around New York City that provide free masks and rapid antigen tests to anyone in needFree N95s, KN95s, and information about masks. Located at Dunedin City Library on Moray Place.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://lnk.bio/AotearoaMaskBloc/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/aotearoamaskbloc/" },
+        { "label": "facebook", "url": "https://www.facebook.com/aotearoamaskbloc//" }       
+      ],
+      "lat": -45.8727243,
+      "lng": 170.5031790
     }
   ]
 }
