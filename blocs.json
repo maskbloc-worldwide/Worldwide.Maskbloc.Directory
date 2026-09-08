@@ -1058,6 +1058,19 @@
       ],
       "lat": -45.8727243,
       "lng": 170.5031790
+    },
+    {
+      "name": "Chicago West Suburban Mask Bloc",
+      "region": "USA - Midwest",
+      "location": "Wheaton, IL (Ilinois)",
+      "description": "Free masks of all types, specializing in Zimis and children’s masks. Free rapid tests when available. Free loans of smaller air purifiers and Far UV light. Limited Metrix and PlusLife resources at reduced cost Limited COVID Cautious events Portacount Testing by appointment for individuals and groups.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "facebook", "url": "https://www.facebook.com/share/1PTsAEfsPQ/" }   
+      ],
+      "lat": 41.8795,
+      "lng": -88.1054
     }
   ]
 }
