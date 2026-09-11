@@ -1071,6 +1071,34 @@
       ],
       "lat": 41.8795,
       "lng": -88.1054
+    },
+    {
+      "name": "Brighton Mask Bloc",
+      "region": "Europe",
+      "location": "Brighton, England",
+      "description": "A project offering free high filtration masks to our local community and the wider UK. We provide masks for individuals, groups and events. We offer FFP2 and FFP3 masks (and equivalently graded masks) in a variety of sizes and styles. For more information, please contact us at BrightonMaskBloc@protonmail.com or follow us on Instagram @brightonmaskbloc.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "instagram", "url": "https://www.instagram.com/brightonmaskbloc/" },
+        { "label": "Mask Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/ylVwCyklY1KAh4F3LiWJBAy9MmpF4wAhaJBanNqpg0M/" }         
+      ],
+      "lat": 50.82838,
+      "lng": -0.13947
+    },
+    {
+      "name": "Tucson Mask Bloc",
+      "region": "USA - West",
+      "location": "Tucson, AZ (Arizona)",
+      "description": "We keep us safe(r). Free masks & COVID resources. Queer, trans, anti-racist, abolitionist mutual aid on unceded Tohono O'odham & Pascua Yaqui lands.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Carrd", "url": "https://tucsonmaskbloc.carrd.co" },
+        { "label": "Mask Request Form", "url": "https://maskup.short.gy/tucson" }         
+      ],
+      "lat": 32.221480,
+      "lng": -110.892281
     }
   ]
 }
