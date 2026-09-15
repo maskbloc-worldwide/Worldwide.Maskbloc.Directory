@@ -504,11 +504,12 @@
       "name": "Common Humanity Collective",
       "region": "USA - West",
       "location": "San Francisco Bay Area, CA (California)",
-      "description": "Collective distributing free masks, DIY air purifiers, and other clean air and safety supplies in the San Francisco Bay Area including SF, Oakland, Berkeley and beyond.",
+      "description": "Collective distributing free masks, DIY air purifiers, and other clean air and safety supplies in the San Francisco Bay Area including SF, Oakland, Berkeley and beyond. We host DIY air purifier builds with our decentralized network of volunteers and other local groups, then distribute them for free with other supplies like masks. Also offer free masks and other mutual aid",
       "status": "active",
       "type": "care-collective",
       "links": [
-        { "label": "Website", "url": "https://www.commonhumanitycollective.org/" }
+        { "label": "Website", "url": "https://www.commonhumanitycollective.org/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/chumanityc/" }                
       ],
       "lat": 37.792825,
       "lng": -122.360191
@@ -1116,21 +1117,6 @@
       ],
       "lat": 52.091682,
       "lng": 5.118531
-    },
-    {
-      "name": "Common Humanity Collective",
-      "region": "USA - West",
-      "location": "Bay Area, CA (California)",
-      "description": "We host DIY air purifier builds with our decentralized network of volunteers and other local groups, then distribute them for free with other supplies like masks. Also offer free masks and other mutual aid",
-      "status": "active",
-      "type": "clean-air",
-      "links": [
-        { "label": "Website", "url": "https://www.commonhumanitycollective.org/" },
-        { "label": "Instagram", "url": "https://www.instagram.com/chumanityc/" }        
-      ],
-      "lat": 37.81826,
-      "lng": -122.30530
-    },
-    
+    } 
   ]
 }
