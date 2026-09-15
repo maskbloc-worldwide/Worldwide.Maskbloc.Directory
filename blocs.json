@@ -1099,6 +1099,38 @@
       ],
       "lat": 32.221480,
       "lng": -110.892281
-    }
+    },
+    {
+      "name": "Mask Bloc NL",
+      "region": "Europe",
+      "location": "The Netherlands",
+      "description": "English: Mask Bloc NL is a mutual aid group that aims to provide masks for free to anyone who needs them in the Netherlands. You can contact us through the form to request masks, join the bloc, or donate. Nederlands: Mask Bloc NL is een mutual aid groep die er naar streeft om gratis mondkapjes uit te delen voor iedereen die ze nodig heeft in Nederland. Je kunt ons bereiken via het contactformulier om mondjapjes aan te vragen, lid van de groep te worden, of te doneren.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/b+y4+DEaELJuuSoOYKNwEnRiLRtBs4--WfMYa0AkSzI/" },
+        { "label": "Linktree", "url": "https://linktr.ee/MaskBlocNL" }, 
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocnl" },
+        { "label": "Mastodon", "url": "https://www.instagram.com/maskblocnl" }, 
+        { "label": "Twitter", "url": "https://x.com/MaskBlocNL" } 
+      ],
+      "lat": 52.091682,
+      "lng": 5.118531
+    },
+    {
+      "name": "Common Humanity Collective",
+      "region": "USA - West",
+      "location": "Bay Area, CA (California)",
+      "description": "We host DIY air purifier builds with our decentralized network of volunteers and other local groups, then distribute them for free with other supplies like masks. Also offer free masks and other mutual aid",
+      "status": "active",
+      "type": "clean-air",
+      "links": [
+        { "label": "Website", "url": "https://www.commonhumanitycollective.org/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/chumanityc/" }        
+      ],
+      "lat": 37.81826,
+      "lng": -122.30530
+    },
+    
   ]
 }
