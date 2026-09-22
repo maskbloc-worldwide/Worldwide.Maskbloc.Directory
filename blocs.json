@@ -1117,6 +1117,22 @@
       ],
       "lat": 52.091682,
       "lng": 5.118531
+    },
+    {
+      "name": "Great Falls Mask Bloc",
+      "region": "USA - West",
+      "location": "Great Falls, MT (Montana)",
+      "description": "Free high-quality masks/respirators, rapid COVID tests, and educational materials.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/greatfallsmaskbloc" },
+        { "label": "Mask Request Form", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdHybY9_UaY7U5WQELExR3dxuaD6WyAGqdtiSQu_jGU6Zf3Ow/viewform" }, 
+        { "label": "Volunteer Application Form", "url": "https://cryptpad.fr/form/#/3/form/view/3f3f39d156645dc87cbac0396ab96f13/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/greatfallsmaskbloc" } 
+      ],
+      "lat": 47.497547,
+      "lng": -111.310449
     } 
   ]
 }
