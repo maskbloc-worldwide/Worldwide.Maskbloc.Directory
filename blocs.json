@@ -1204,6 +1204,19 @@
       ],
       "lat": 41.824,
       "lng": -71.412
+    },
+    {
+      "name": "Wirral Mask Bloc",
+      "region": "Europe",
+      "location": "Wirral, UK (United Kingdom)",
+      "description": "Free N95s at the moment with the hope to offer tests and purifiers in future. (Operating by post only at present so coordinates are not accurate)",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://instagram.com/wirralmaskbloc/" }                 
+      ],
+      "lat": 53.392370,
+      "lng": -3.042953
     }
   ]
 }
