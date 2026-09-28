@@ -1167,7 +1167,7 @@
       "name": "Action Covid Montréal / Covid Action Montréal",
       "region": "Canada - Central",
       "location": "Montréal, QC (Québec)",
-      "description": "We are a Tiohtià:ke / Montréal based mutual aid collective offering free masks, rapid tests, and information related to COVID. We believe that the “new normal” should be about community care and creating a world where everyone is free. On est un collectif d’aide mutuelle basé à Tiohtià:ke / Montréal offrant des masques et des tests rapides gratuits, ainsi que de l’information sur la COVID. Nous croyons que le « nouveau normal » devrait inclure un esprit de solidarité et de communauté, pour créer un monde où toustes sont libres.",
+      "description": "We are a Tiohtià:ke / Montréal based mutual aid collective offering free masks, rapid tests, and information related to COVID. We believe that the “new normal” should be about community care and creating a world where everyone is free. Email: covidactionnow@proton.me On est un collectif d’aide mutuelle basé à Tiohtià:ke / Montréal offrant des masques et des tests rapides gratuits, ainsi que de l’information sur la COVID. Nous croyons que le « nouveau normal » devrait inclure un esprit de solidarité et de communauté, pour créer un monde où toustes sont libres. Email: covidactionnow@proton.me ",
       "status": "active",
       "type": "mask-bloc",
       "links": [
@@ -1182,11 +1182,11 @@
       "name": "Ward Mask Bloc",
       "region": "Canada - Central",
       "location": "Guelph, ON (Ontario)",
-      "description": "Free N95 porch pick-ups on bus route for Guelph residents in The Ward. Current N95 sizes available are medium and small; small may fit youth. Mask delivery to outer door for homebound residents in the historic Ward neighbourhood of Guelph, elsewhere in Guelph as volunteer availability allows. Limited small air cleaner library. Gently used respirator mask trade-ins (BYO replacement filters), accepting clean donations that we sanitize with HOCL. PWYC hand block-printed “masks required” door signs made to order. Email: WardMaskBloc@pronton.me Texting-only line: 1-226-780-0024",
+      "description": "Free N95 porch pick-ups on bus route for Guelph residents in The Ward. Current N95 sizes available are medium and small; small may fit youth. Mask delivery to outer door for homebound residents in the historic Ward neighbourhood of Guelph, elsewhere in Guelph as volunteer availability allows. Limited small air cleaner library. Gently used respirator mask trade-ins (BYO replacement filters), accepting clean donations that we sanitize with HOCL. PWYC hand block-printed “masks required” door signs made to order. Email: WardMaskBloc@proton.me Texting-only line: 1-226-780-0024",
       "status": "active",
       "type": "mask-bloc",
       "links": [
-        { "label": "Email", "url": "WardMaskBloc@pronton.me" }         
+        { "label": "Email", "url": "WardMaskBloc@proton.me" }         
       ],
       "lat": 43.544572,
       "lng": -80.239235
