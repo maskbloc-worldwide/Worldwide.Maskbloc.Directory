@@ -1190,6 +1190,20 @@
       ],
       "lat": 43.544572,
       "lng": -80.239235
-    }    
+    },
+    {
+      "name": "RI Mask Bloc",
+      "region": "USA - Northeast",
+      "location": "Rhode Island",
+      "description": "masks, COVID and flu tests",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://www.rimaskbloc.org/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/rimaskbloc/" }                 
+      ],
+      "lat": 41.824,
+      "lng": -71.412
+    }
   ]
 }
