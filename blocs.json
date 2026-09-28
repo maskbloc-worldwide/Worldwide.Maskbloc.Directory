@@ -1138,7 +1138,7 @@
       "name": "The People's PPE",
       "region": "USA - Northeast",
       "location": "New Haven, CT (Connecticut) & Hudson Valley, NY (New York)",
-      "description": "a youth-led mutual aid collective distributing free masks and tests to folks. based in so-called “new haven CT” and the “hudson valley of NY”.",
+      "description": "A youth-led mutual aid collective distributing free masks and tests to folks. based in so-called “new haven CT” and the “hudson valley of NY”.",
       "status": "active",
       "type": "care-collective",
       "links": [
@@ -1162,7 +1162,7 @@
       ],
       "lat": 29.9773606189373,
       "lng": -90.07001776678005
-    }
+    },
     {
       "name": "Action Covid Montréal / Covid Action Montréal",
       "region": "Canada - Central",
