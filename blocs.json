@@ -1133,6 +1133,63 @@
       ],
       "lat": 47.497547,
       "lng": -111.310449
-    } 
+    },
+    {
+      "name": "The People's PPE",
+      "region": "USA - Northeast",
+      "location": "New Haven, CT (Connecticut) & Hudson Valley, NY (New York)",
+      "description": "a youth-led mutual aid collective distributing free masks and tests to folks. based in so-called “new haven CT” and the “hudson valley of NY”.",
+      "status": "active",
+      "type": "care-collective",
+      "links": [
+        { "label": "Request Form", "url": "https://www.peoplesppe.org/request" }, 
+        { "label": "Instagram", "url": "https://www.instagram.com/peoplesppe" } 
+      ],
+      "lat": 41.306927725819314,
+      "lng": -72.92881848731813
+    },
+    {
+      "name": "Fight COVID NOLA",
+      "region": "USA - South",
+      "location": "New Orleans, LA (Louisiana)",
+      "description": "Request free masks via Twitter or Instagram DM!",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/fightcovidnola/" }, 
+        { "label": "Twitter", "url": "https://x.com/FightCovidNOLA" },
+        { "label": "Linktree", "url": "https://linktr.ee/fightcovidnola" }         
+      ],
+      "lat": 29.9773606189373,
+      "lng": -90.07001776678005
+    }
+    {
+      "name": "Action Covid Montréal / Covid Action Montréal",
+      "region": "Canada - Central",
+      "location": "Montréal, QC (Québec)",
+      "description": "We are a Tiohtià:ke / Montréal based mutual aid collective offering free masks, rapid tests, and information related to COVID. We believe that the “new normal” should be about community care and creating a world where everyone is free. On est un collectif d’aide mutuelle basé à Tiohtià:ke / Montréal offrant des masques et des tests rapides gratuits, ainsi que de l’information sur la COVID. Nous croyons que le « nouveau normal » devrait inclure un esprit de solidarité et de communauté, pour créer un monde où toustes sont libres.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/action_covid_montreal/" }, 
+        { "label": "Linktree", "url": "https://linktr.ee/action_covid_montreal" },
+        { "label": "Email", "url": "covidactionnow@proton.me" }         
+      ],
+      "lat": 45.495655,
+      "lng": -73.579741
+    },
+    {
+      "name": "Ward Mask Bloc",
+      "region": "Canada - Central",
+      "location": "Guelph, ON (Ontario)",
+      "description": "Free N95 porch pick-ups on bus route for Guelph residents in The Ward. Current N95 sizes available are medium and small; small may fit youth. Mask delivery to outer door for homebound residents in the historic Ward neighbourhood of Guelph, elsewhere in Guelph as volunteer availability allows. Limited small air cleaner library. Gently used respirator mask trade-ins (BYO replacement filters), accepting clean donations that we sanitize with HOCL. PWYC hand block-printed “masks required” door signs made to order. Email: WardMaskBloc@pronton.me Texting-only line: 1-226-780-0024",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Email", "url": "WardMaskBloc@pronton.me" }         
+      ],
+      "lat": 43.544572,
+      "lng": -80.239235
+    }    
   ]
 }
