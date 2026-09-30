@@ -1217,6 +1217,34 @@
       ],
       "lat": 53.392370,
       "lng": -3.042953
+    },
+    {
+      "name": "Clean Air KC",
+      "region": "USA - Midwest",
+      "location": "Kansas City, MO (Missouri)",
+      "description": "Air purifiers and far-UVC short-term loans for medical appointments or events.",
+      "status": "active",
+      "type": "clean-air",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/cleanair_kc" },                 
+        { "label": "Linktree", "url": "https://linktr.ee/cleanairkc" }                 
+      ],
+      "lat": 39.115728920952776,
+      "lng": -94.60832156162493
+    },
+    {
+      "name": "Health Stellium",
+      "region": "USA - Northeast",
+      "location": "New York City, NY (New York)",
+      "description": "Free N95 mailouts for Black people in the USA to fight health disparities. COVID tests are available sometimes as well.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://healthstellium.gumroad.com/" },                 
+        { "label": "Instagram", "url": "https://www.instagram.com/healthstellium" }                 
+      ],
+      "lat": 40.6889294,
+      "lng": -73.9510132
     }
   ]
 }
