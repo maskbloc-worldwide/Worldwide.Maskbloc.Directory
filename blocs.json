@@ -1245,6 +1245,19 @@
       ],
       "lat": 40.6889294,
       "lng": -73.9510132
+    },
+    {
+      "name": "Maskbloc Santa Cruz",
+      "region": "USA - West",
+      "location": "Santa Cruz CA (California)",
+      "description": "Free N95s, Kn95s, and rapid tests when available.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocsantacruz" }                 
+      ],
+      "lat": 36.9725,
+      "lng": -122.0233
     }
   ]
 }
