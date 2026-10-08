@@ -1249,7 +1249,7 @@
     {
       "name": "Maskbloc Santa Cruz",
       "region": "USA - West",
-      "location": "Santa Cruz CA (California)",
+      "location": "Santa Cruz, CA (California)",
       "description": "Free N95s, Kn95s, and rapid tests when available.",
       "status": "active",
       "type": "mask-bloc",
@@ -1258,6 +1258,50 @@
       ],
       "lat": 36.9725,
       "lng": -122.0233
-    }
+    },
+    {
+      "name": "Masks4EastVan",
+      "region": "Canada - Pacific",
+      "location": "Vancouver, BC (British Colombia)",
+      "description": "Masks4EastVan is a grassroots mutual aid project located on stolen Musqueam, Squamish, and Tsleil-Waututh territories. We offer: N95 / KN95 masks in a variety of sizes and styles; Mask sampler pack, find what works for you; Rapid antigen tests; Hand sanitizer; Free delivery or pickup for individuals and households in British Columbia. Request through our request form!",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/masks4eastvan" },
+        { "label": "Request Form", "url": "https://bit.ly/masks4eastvan" },
+        { "label": "Linktree", "url": "https://linktr.ee/masks4eastvan" }                 
+      ],
+      "lat": 49.25217804628776,
+      "lng": -123.06223231756205
+    },
+    {
+      "name": "LV Mask Bloc",
+      "region": "USA - Northeast",
+      "location": "Lehigh Valley, PA (Pennsylvania)",
+      "description": "We offer free N95 and KN95 for adults and kids, masks of variety sizes and styles. We also carry C19 tests.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/lvmaskbloc" }              
+      ],
+      "lat": 40.6154869,
+      "lng": -75.3667537
+    },
+    {
+      "name": "Alaska Mask Bloc",
+      "region": "USA - West",
+      "location": "Anchorage, Fairbanks, AK, (Alaska)",
+      "description": "Free N95/KN95s, rapid tests, zines.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/alaskamaskbloc/" },
+        { "label": "Linktree", "url": "https://linktr.ee/alaskamaskbloc" },
+        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/Zg7LW8ky+M25UNL-u8-fiDad4XEhtPrQMZmu76RnPYI/" },
+        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/Zg7LW8ky+M25UNL-u8-fiDad4XEhtPrQMZmu76RnPYI/" }              
+      ],
+      "lat": 61.19,
+      "lng": -149.90
+    },
   ]
 }
