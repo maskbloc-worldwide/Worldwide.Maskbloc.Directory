@@ -1297,11 +1297,191 @@
       "links": [
         { "label": "Instagram", "url": "https://www.instagram.com/alaskamaskbloc/" },
         { "label": "Linktree", "url": "https://linktr.ee/alaskamaskbloc" },
-        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/Zg7LW8ky+M25UNL-u8-fiDad4XEhtPrQMZmu76RnPYI/" },
-        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/Zg7LW8ky+M25UNL-u8-fiDad4XEhtPrQMZmu76RnPYI/" }              
+        { "label": "Request Form", "url": "https://cryptpad.fr/form/#/2/form/view/Zg7LW8ky+M25UNL-u8-fiDad4XEhtPrQMZmu76RnPYI/" }
       ],
       "lat": 61.19,
       "lng": -149.90
+    },
+    {
+      "name": "WNC Mask Bloc",
+      "region": "USA - Northeast",
+      "location": "North Carolina",
+      "description": "free masks, free tests, free mobility aids, and more!",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/wncmaskbloc/" },
+        { "label": "Facebook", "url": "https://www.facebook.com/covidsafeWNC" },
+        { "label": "Linktree", "url": "https://linktr.ee/wncmaskbloc" }
+      ],
+      "lat": 35.3729108,
+      "lng": -83.2233068
+    },
+    {
+      "name": "Free Mask Bloc 757",
+      "region": "USA - Northeast",
+      "location": "Hampton Roads, VA (Virginia)",
+      "description": "free high-filtration masks (disposable respirators) for people in the 757 area code (the southeastern region of so-called Virginia)",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/757masks/" },
+        { "label": "Request Form", "url": "https://tinyurl.com/requestmasks757" }
+      ],
+      "lat": 36.78834666598421,
+      "lng": -76.27890510752384
+    },
+    {
+      "name": "Mask Bloc OCADU",
+      "region": "Canada - Central",
+      "location": "Toronto, ON (Ontario)",
+      "description": "Disability justice collective providing free, high-quality masks to OCADU students and community members",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblococadu/" },
+        { "label": "Linktree", "url": "https://linktr.ee/maskblococadu" }
+      ],
+      "lat": 43.653153670500885,
+      "lng": -79.3915162904983
+    },
+    {
+      "name": "Edinburgh Mask Bloc",
+      "region": "Europe",
+      "location": "Scotland - Edinburgh, UK (United Kingdom)",
+      "description": "High filtration mask distribution in Edinburgh",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/edinmaskbloc/" },
+        { "label": "Linktree", "url": "https://linktr.ee/edinmaskbloc" }
+      ],
+      "lat": 55.95206,
+      "lng": -3.19648
+    },
+    {
+      "name": "Masks4Wpg",
+      "region": "Canada - Central",
+      "location": "Winnipeg, MB (Manitoba)",
+      "description": "Free N95/KN95 community mask box for Winnipeg",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Twitter", "url": "https://x.com/masks4wpg" }
+      ],
+      "lat": 49.8888785,
+      "lng": -97.1195230
+    },
+    {
+      "name": "MasksForLondon",
+      "region": "Europe",
+      "location": "London, UK (United Kingdom)",
+      "description": "London-based community group distributing high-filtration (respirator) masks to London, England and Wales",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/masksforlondon/" },
+        { "label": "Linktree", "url": "https://linktr.ee/MasksForLondon/" }
+      ],
+      "lat": 51.509865,
+      "lng": -0.118092
+    },
+    {
+      "name": "Indy Mask Bloc",
+      "region": "USA - Midwest",
+      "location": "Indianapolis, IN (Indiana)",
+      "description": "Distributing free masks, tests, and other protective supplies in ongoing airborne pandemics",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/indymaskbloc/" },
+        { "label": "Linktree", "url": "https://linktr.ee/indymaskbloc/" }
+      ],
+      "lat": 39.791000,
+      "lng": -86.148003
+    },
+    {
+      "name": "Mask Bloc 603",
+      "region": "USA - Northeast",
+      "location": "New Hampshire",
+      "description": "Providing NH with respirators",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskbloc603/" },
+        { "label": "Linktree", "url": "https://linktr.ee/maskbloc603/" }
+      ],
+      "lat": 44.000000,
+      "lng": -71.500000
+    },
+    {
+      "name": "Mask Bloc 608",
+      "region": "USA - Midwest",
+      "location": "Madison, WI (Wisconsin)",
+      "description": "Free Mask Distribution in MSN, WI",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskbloc608/" },
+        { "label": "Linktree", "url": "https://linktr.ee/maskbloc608/" }
+      ],
+      "lat": 43.073051,
+      "lng": -89.401230
+    },
+    {
+      "name": "Mask 4 Mask Bay Area",
+      "region": "USA - West",
+      "location": "California",
+      "description": "harm reductive covid realist queers for community, cruising, and collective liberation",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://instagram.com/mask4mask.bay.area/" },
+        { "label": "Linktree", "url": "https://linktr.ee/mask4mask.bay.area/" }
+      ],
+      "lat": 37.828724,
+      "lng": -122.355537
+    },
+    {
+      "name": "Fan Favorite SD",
+      "region": "USA - West",
+      "location": "San Diego, CA (California)",
+      "description": "Clean air library and mask bloc located in San Diego, CA",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://instagram.com/fanfavorite.sd/" },
+        { "label": "Links", "url": "https://fanfavoritesd.com/links/" }
+      ],
+      "lat": 32.715736,
+      "lng": -117.161087
+    },
+    {
+      "name": "Central New Jersey Mask Bloc",
+      "region": "USA - Northeast",
+      "location": "New Jersey",
+      "description": "We distribute free high filtration respirators, rapid antigen tests, and various personal protective tools (when available) through domestic and international mail, local drop off deliveries, community mask baskets and tablings. We also provide educational resources to combat public health disinformation, misinformation, and eugenics propaganda.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Carrd", "url": "https://centralnjmb.carrd.co/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/centralnjmaskbloc/" }
+      ],
+      "lat": 40.195798,
+      "lng": -74.637235
+    },
+    {
+      "name": "New Haven Mask Bloc",
+      "region": "USA - Northeast",
+      "location": "New Haven, CT (Connecticut)",
+      "description": "kid and adult earloop masks, adult headstrap masks.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://newhavenmaskbloc.neocities.org/" }
+      ],
+      "lat": 41.30815,
+      "lng": -72.92816
     }
   ]
 }
