@@ -1496,6 +1496,21 @@
       ],
       "lat": 38.8478031,
       "lng": -77.3038642
+    },
+    {
+      "name": "Aotearoa Mask Bloc Manurewa",
+      "region": "Oceania",
+      "location": "Manurewa, Auckland, NZ (New Zealand)",
+      "description": "Located at Manurewa Library. Free N95s and other respirators, informative zines.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://lnk.bio/AotearoaMaskBloc" },
+        { "label": "Instagram", "url": "https://instagram.com/AotearoaMaskBloc" },
+        { "label": "Facebook", "url": "https://www.facebook.com/AotearoaMaskBloc" }        
+      ],
+      "lat": -37.0207158,
+      "lng": 174.8972188
     }
   ]
 }
