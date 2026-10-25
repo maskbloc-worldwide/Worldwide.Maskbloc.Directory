@@ -1511,6 +1511,34 @@
       ],
       "lat": -37.0207158,
       "lng": 174.8972188
+    },
+    {
+      "name": "Mask Bloc San José",
+      "region": "USA - West",
+      "location": "San Jose, CA (California)",
+      "description": "We provide free, high quality face N95/KN95 masks and COVID rapid antigen tests to anyone who needs one. Request directly from us or pick up from select libraries in the South Bay.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://masksanjose.org/" },
+        { "label": "Request Form", "url": "https://form.jotform.com/232922182393053" },
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocsanjose/" }        
+      ],
+      "lat": 37.365291,
+      "lng": -121.828063
+    },
+    {
+      "name": "Mask Bloc Brussels",
+      "region": "Europe",
+      "location": "Brussels, BE (Belgium)",
+      "description": "Infos and redirection to infos, soon free ffp2, email maskblocbxl@proton.me",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocbxl/" }        
+      ],
+      "lat": 50.8451273,
+      "lng": 4.3551604
     }
   ]
 }
