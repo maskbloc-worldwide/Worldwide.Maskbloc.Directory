@@ -1539,6 +1539,20 @@
       ],
       "lat": 50.8451273,
       "lng": 4.3551604
+    },
+    {
+      "name": "Mask Bloc Olympia st̓əč̓as (Steh-Chass)",
+      "region": "USA - West",
+      "location": "Olympia, WA (Washington)",
+      "description": "Free masks and rapid tests",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://maskblocolympia.neocities.org/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocolympia/" }                
+      ],
+      "lat": 47.04798007123715,
+      "lng": -122.9006038139922
     }
   ]
 }
