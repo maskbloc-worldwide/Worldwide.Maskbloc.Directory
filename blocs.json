@@ -1553,6 +1553,34 @@
       ],
       "lat": 47.04798007123715,
       "lng": -122.9006038139922
+    },
+    {
+      "name": "Mask Bloc ICT",
+      "region": "USA - Midwest",
+      "location": "Wichita, KS (Kansas)",
+      "description": "ICT (Wichita, KS) mutual aid providing free (K) N95 masks",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/MaskBlocICT/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/maskblocict/" },
+        { "label": "facebook", "url": "https://facebook.com/share/1A97FcaiNT/" } 
+      ],
+      "lat": 37.678681,
+      "lng": -97.312582
+    },
+    {
+      "name": "Maine Breathes Easy",
+      "region": "USA - Northeast",
+      "location": "Maine",
+      "description": "Maine Breathes Easy (MEBE) is a diverse, unranked group of community members valuing and practicing precautions against the dangerous effects of Covid infection and other serious illnesses. We offer free support, connection, information, testing, personal protective equipment and more through consensus-driven activities in a respectful, judgement-free environment.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://mainebreatheseasy.org/" }
+      ],
+      "lat": 43.65466,
+      "lng": -70.26768
     }
   ]
 }
