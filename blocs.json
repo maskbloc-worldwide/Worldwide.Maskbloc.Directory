@@ -1581,6 +1581,34 @@
       ],
       "lat": 43.65466,
       "lng": -70.26768
-    }
+    },
+    {
+      "name": "Zdrowie Mas - Mask Bloc Poland",
+      "region": "Europe",
+      "location": "Poland",
+      "description": "We offer free FFP2 masks and informations about clean air, prevention of airborne infections, long term effects of COVID and disability justice.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Website", "url": "https://zdrowiemas.pl/" },
+        { "label": "Mastodon", "url": "https://fedi.nemo.earth/@zdrowiemas/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/zdrowie.mas/" }
+      ],
+      "lat": 51.189988,
+      "lng": 17.116718
+    },
+    {
+      "name": "Mask Bloc SJSU",
+      "region": "USA - West",
+      "location": "San Jose, CA (California)",
+      "description": "Free masks.",
+      "status": "active",
+      "type": "mask-bloc",
+      "links": [
+        { "label": "Linktree", "url": "https://linktr.ee/maskblocsjsu/" }
+      ],
+      "lat": 37.336153,
+      "lng": -121.881464
+    } 
   ]
 }
